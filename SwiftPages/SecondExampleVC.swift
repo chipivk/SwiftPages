@@ -21,9 +21,10 @@ class SecondExampleVC: UIViewController {
         
         //Sample customization
         swiftPagesView.setOriginY(0.0)
-        swiftPagesView.enableAeroEffectInTopBar(true)
+        swiftPagesView.enableAeroEffectInTopBar(false)
         swiftPagesView.setButtonsTextColor(UIColor.whiteColor())
         swiftPagesView.setAnimatedBarColor(UIColor.whiteColor())
+        swiftPagesView.setTopBarBackground(UIColor(red: 244/255, green: 164/255, blue: 96/255, alpha: 1.0))
         swiftPagesView.initializeWithVCIDsArrayAndButtonTitlesArray(VCIDs, buttonTitlesArray: buttonTitles)
     }
 

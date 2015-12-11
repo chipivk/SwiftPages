@@ -19,11 +19,11 @@ class FirstExampleVC: UIViewController {
         
         //Initiation
         var VCIDs : [String] = ["FirstVC", "SecondVC", "ThirdVC", "FourthVC", "FifthVC"]
-        var buttonImages : [UIImage] = [UIImage(named:"HomeIcon.png")!,
-                                        UIImage(named:"LocationIcon.png")!,
-                                        UIImage(named:"CollectionIcon.png")!,
-                                        UIImage(named:"ListIcon.png")!,
-                                        UIImage(named:"StarIcon.png")!]
+        var buttonImages : [UIImage] = [UIImage(named:"HomeIcon")!,
+                                        UIImage(named:"LocationIcon")!,
+                                        UIImage(named:"CollectionIcon")!,
+                                        UIImage(named:"ListIcon")!,
+                                        UIImage(named:"StarIcon")!]
         
         //Sample customization
         swiftPagesView.initializeWithVCIDsArrayAndButtonImagesArray(VCIDs, buttonImagesArray: buttonImages)

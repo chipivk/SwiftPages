@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0710"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -17,20 +17,6 @@
                BlueprintIdentifier = "6489B0281B0EDEEA009E6AA4"
                BuildableName = "SwiftPages.app"
                BlueprintName = "SwiftPages"
-               ReferencedContainer = "container:SwiftPages.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6489B03D1B0EDEEA009E6AA4"
-               BuildableName = "SwiftPagesTests.xctest"
-               BlueprintName = "SwiftPagesTests"
                ReferencedContainer = "container:SwiftPages.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

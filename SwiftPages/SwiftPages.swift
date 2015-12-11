@@ -86,14 +86,20 @@ public class SwiftPages: UIView, UIScrollViewDelegate {
         topBar = UIView(frame: CGRectMake(0, 0, containerView.frame.size.width, topBarHeight))
         topBar.backgroundColor = topBarBackground
         if (aeroEffectInTopBar) {
+            if #available(iOS 8.0, *) {
             //Create the blurred visual effect
             //You can choose between ExtraLight, Light and Dark
             topBar.backgroundColor = UIColor.clearColor()
-            let blurEffect: UIBlurEffect = UIBlurEffect(style: UIBlurEffectStyle.Light)
-            let blurView = UIVisualEffectView(effect: blurEffect)
-            blurView.frame = topBar.bounds
-            blurView.translatesAutoresizingMaskIntoConstraints = false
-            topBar.addSubview(blurView)
+            
+                let blurEffect: UIBlurEffect = UIBlurEffect(style: UIBlurEffectStyle.Light)
+                let blurView = UIVisualEffectView(effect: blurEffect)
+                blurView.frame = topBar.bounds
+                blurView.translatesAutoresizingMaskIntoConstraints = false
+                topBar.addSubview(blurView)
+            } else {
+                // Fallback on earlier versions
+            }
+            
         }
         containerView.addSubview(topBar)
         
